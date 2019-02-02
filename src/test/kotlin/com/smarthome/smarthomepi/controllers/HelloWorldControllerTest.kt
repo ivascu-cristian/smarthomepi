@@ -22,6 +22,6 @@ class HelloWorldControllerTest {
     fun `responds with hello world`() {
         mockMvc.perform(
                 MockMvcRequestBuilders.get("/")
-        ).andExpect(MockMvcResultMatchers.status().isBadRequest)
+        ).andExpect(MockMvcResultMatchers.status().isOk)
     }
 }
